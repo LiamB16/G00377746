@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,16 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="small">Welcome to Steam</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    
+  <ion-button [routerLink] = "['/logo']" routerDirection="forward"> view logo </ion-button>
+    <ion-button [routerLink] = "['/genre']" routerDirection="forward"> select prefered genre of game </ion-button>
+    <ion-button [routerLink] = "['/steam']" routerDirection="forward"> view steam products </ion-button>
+    <ion-button [routerLink] = "['/founders']" routerDirection="forward"> view names of founders </ion-button>
+    <ion-button [routerLink] = "['/geolocator']" routerDirection="forward"> use geolocator </ion-button>
+    
+    
+    
 </ion-content>

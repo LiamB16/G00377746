@@ -1,0 +1,33 @@
+<ion-content>
+  <ion-title>Current prefered genre is {{myGenre}}</ion-title>
+  <ion-list>
+  <ion-radio-group [(ngModel)]="myGenre">
+  <ion-item>
+  <ion-label>Action/Adventure</ion-label>
+  <ion-radio value="Action/Adventure"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Horror</ion-label>
+  <ion-radio value="Horror"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Racing</ion-label>
+  <ion-radio value="Racing" ></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>First Person Shooter (FPS)</ion-label>
+  <ion-radio value="First Person Shooter (FPS)" ></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Fighting</ion-label>
+  <ion-radio value="Fighting" ></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Role Playing Game (RPG)</ion-label>
+  <ion-radio value="Role Playing Game (RPG)" ></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="saveGenre()">Save</ion-button>
+</ion-content>
+  
